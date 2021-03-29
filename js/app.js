@@ -60,7 +60,7 @@ function onEachFeature(feature, layer) {
 // Function to initialize map
 function makeMap(geopoints) {
   var tiles = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png ', {
-    maxZoom: 19,
+    maxZoom: 10,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   });
   window.markers = L.markerClusterGroup();
