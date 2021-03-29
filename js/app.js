@@ -60,7 +60,7 @@ function onEachFeature(feature, layer) {
 // Function to initialize map
 function makeMap(geopoints) {
   var tiles = L.tileLayer('https://a.tile.openstreetmap.org/{z}/{x}/{y}.png ', {
-    maxZoom: 10,
+    maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   });
   window.markers = L.markerClusterGroup();
@@ -77,7 +77,7 @@ function makeMap(geopoints) {
       position: "topleft",
       icon: "fa fa-compass",
       locateOptions: {
-        maxZoom: 10,
+        maxZoom: 18,
         watch: true,
         enableHighAccuracy: true,
         maximumAge: 10000,
